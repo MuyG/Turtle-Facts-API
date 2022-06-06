@@ -1,8 +1,9 @@
-
-const { response } = require('express')
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const PORT = 1000
+
+app.use(cors())
 
 const turtles = {
     'red-eared slider': {
