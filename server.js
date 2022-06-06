@@ -46,6 +46,6 @@ app.get('/api/:name', (req, res) => {
     else res.json(turtles['unknown'])
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
